@@ -480,6 +480,43 @@ h1, h2, h3, h4, p, ul {
 .icon-soc-foot {
     fill: var(--batton-background-color);
 }
+.footer-social-media {
+    margin-right: 80px;
+}
+.login-email {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--footer-text-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+ .label-text {
+    color: var(--footer-text-color);
+font-size: 16px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+
+ }
+.button-label {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background:  #4D5AE5;
+    gap: 16px;
+    width: 264px;
+    height: 40px;  
+    color: var(--footer-text-color);
+}
+.email-subsr {
+   display: flex;
+   gap: 24px;
+   margin-top: 16px;
+}
 /*--------------------modal---------------------------------*/
 .modal-open {
     position: fixed;
@@ -536,6 +573,59 @@ h1, h2, h3, h4, p, ul {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     
 }
+
+
+.registered-form {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+     margin: 0 24px 16px;
+}
+.form-title {
+
+    color: #2E2F42;
+    
+    font-size: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-top: 72px;
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    text-align: center;
+    }
+.registered-form label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.button-submit {
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    background:#4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--footer-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.span-pp {
+    color:#404BBF;
+    text-decoration: underline;
+}
+
 /*-----------------------SECTION-PORTFOLIO----------------------*/
 .section-portfolio {
     padding-top: 96px; padding-bottom: 120px; 
