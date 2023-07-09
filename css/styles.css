@@ -477,20 +477,15 @@ h1, h2, h3, h4, p, ul {
 .footmedia-icon-link:focus {
     background-color: #31d0aa;
 }
-.icon-soc-foot {
+.svg-subr {
     fill: var(--batton-background-color);
+    margin-left: 16px;
+    
 }
 .footer-social-media {
     margin-right: 80px;
 }
-.login-email {
-    width: 264px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid var(--footer-text-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
- .label-text {
+.label-text {
     color: var(--footer-text-color);
 font-size: 16px;
 font-family: Roboto;
@@ -498,26 +493,54 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
+margin-bottom: 16px;
 
  }
+
+ .login-form {
+    display: flex;
+    gap: 24px;
+ }
+
+
+
+.login-email {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--footer-text-color);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
+    color: #ffffff;
+}
+.login-email::placeholder {
+    color #ffffff;
+}
 .button-label {
-    display: inline-flex;
-    padding: 8px 24px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    background:  #4D5AE5;
-    gap: 16px;
-    width: 264px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    background: #4D5AE5;
+    border: none;
+    border-radius: 4px; 
+    min-width: 165px;
     height: 40px;  
     color: var(--footer-text-color);
+    padding: 16px;
 }
-.email-subsr {
-   display: flex;
-   gap: 24px;
-   margin-top: 16px;
-}
+
 /*--------------------modal---------------------------------*/
+
 .modal-open {
     position: fixed;
     top: 0;
@@ -526,7 +549,6 @@ letter-spacing: 0.02em;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-   
 }
 .is-hidden {
     opacity: 0;
@@ -534,16 +556,16 @@ letter-spacing: 0.02em;
     pointer-events: none;
 }
 .modal-content {
+    max-height: 584px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1); 
-    width: 408px;
-    min-height: 584px;
+    transform: translate(-50%, -50%) scale(1);  
     background: #fcfcfc; 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
     border-radius: 4px; 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    padding: 72px 24px 24px 24px; 
 }
 .modal-button {
     position: absolute; 
@@ -569,62 +591,130 @@ letter-spacing: 0.02em;
     fill: #ffffff;
 
 }
-.icon-button {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    
-}
-
-
-.registered-form {
-    display: flex;
-    width: 360px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    border-radius: 4px;
-     margin: 0 24px 16px;
-}
 .form-title {
-
+    display: flex;
     color: #2E2F42;
-    
-    font-size: 16px;
-    font-family: Roboto;
-    font-style: normal;
+     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 72px;
-    display: flex;
+    margin-bottom: 16px; 
     width: 360px;
-    flex-direction: column;
     text-align: center;
     }
-.registered-form label {
+ .form-modal {
+    margin-bottom: 8px; 
+    }
+
+.label-form {
+    font-size: 12px;
+    line-height: 1.17; 
+    letter-spacing: 0.04em;
+    color: var(--icon-main-color);
+    display: block;
+    margin-bottom: 4px;
+}
+.label-input {
+    position: relative;
+}
+
+.input-form {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    border-radius: 4px; 
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent; 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--icon-main-color);
+   
+}
+.input-form:focus {
+    border-color: #4D5AE5; 
+}
+.input-form:focus + .icon-button-input {
+    fill: #4D5AE5;
+}
+.icon-button-input {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    color: currentColor;
+}
+
+.comment {
+    margin-bottom: 16px;
+}
+.textarea-form {
+    width: 100%; 
+    height: 120px; 
+    font-size: 12px;
+    line-height: 1.17; 
+    letter-spacing: 0.04em; 
+    color: rgba(46, 47, 66, 0.4); 
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px; 
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent; 
+    resize: none; 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.textarea-form:focus {
+    border-color: #4D5AE5; 
+}
+.accept {
+    margin-bottom: 24px;
+}
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  .label-form-accept {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em; 
+    color: var(--icon-main-color);
+  }
+  .span-pp {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    fill: transparent;
+  }
+  input.prv-policy:checked + label .span-pp {
+    background-color: var(--icon-accent-color);
+    border: none;
+    fill: var(--batton-background-color);
+}
+.accept-link {
+    color: var(--logo-color);
 }
 .button-submit {
-    padding: 16px 32px;
-    width: 169px;
+    display: block;
+    min-width: 169px;
     height: 56px;
     border-radius: 4px;
     background:#4D5AE5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--footer-text-color);
-    text-align: center;
+    color: var(--footer-text-color); 
     font-size: 16px;
-    font-family: Roboto;
-    font-style: normal;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   margin: 0 120px 24px;
 }
-.span-pp {
-    color:#404BBF;
-    text-decoration: underline;
-}
+
 
 /*-----------------------SECTION-PORTFOLIO----------------------*/
 .section-portfolio {
