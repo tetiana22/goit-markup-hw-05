@@ -477,6 +477,12 @@ h1, h2, h3, h4, p, ul {
 .footmedia-icon-link:focus {
     background-color: #31d0aa;
 }
+.foot-title {
+    color: #ffffff; 
+}
+.input-form {
+    border: 1px solid #ffffff;
+}
 .svg-subr {
     fill: var(--batton-background-color);
     margin-left: 16px;
@@ -518,7 +524,7 @@ margin-bottom: 16px;
     color: #ffffff;
 }
 .login-email::placeholder {
-    color #ffffff;
+    color: #ffffff;
 }
 .button-label {
     display: flex;
