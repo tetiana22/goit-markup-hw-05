@@ -477,9 +477,7 @@ h1, h2, h3, h4, p, ul {
 .footmedia-icon-link:focus {
     background-color: #31d0aa;
 }
-.foot-title {
-    color: #ffffff; 
-}
+
 .input-form {
     border: 1px solid #ffffff;
 }
@@ -492,7 +490,7 @@ h1, h2, h3, h4, p, ul {
     margin-right: 80px;
 }
 .label-text {
-    color: var(--footer-text-color);
+    color: #ffffff;
 font-size: 16px;
 font-family: Roboto;
 font-style: normal;
@@ -514,7 +512,6 @@ margin-bottom: 16px;
     width: 264px;
     height: 40px;
     border-radius: 4px;
-    border: 1px solid var(--footer-text-color);
     background-color: transparent;
     font-size: 12px;
     line-height: 1.5;
@@ -522,6 +519,7 @@ margin-bottom: 16px;
     padding-left: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
     color: #ffffff;
+    border: 1px solid #ffffff; 
 }
 .login-email::placeholder {
     color: #ffffff;
